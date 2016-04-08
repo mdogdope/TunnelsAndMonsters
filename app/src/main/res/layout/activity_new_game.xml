@@ -14,7 +14,7 @@
 
     <TextView
         android:id="@+id/question"
-        android:text="hello world"
+        android:text="hello world."
         android:textColor="@color/black"
         android:textSize="28sp"
         android:background="@color/orange"
