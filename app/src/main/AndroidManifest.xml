@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".VillageMenu" />
-        <activity android:name=".NewGame"/>
+        <activity android:name=".NewGame" />
     </application>
 
 </manifest>
