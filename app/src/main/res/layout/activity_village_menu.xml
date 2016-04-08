@@ -8,6 +8,7 @@
     tools:context="com.mehstudios.tunnelsandmonsters.VillageMenu">
 
     <ImageView
+        android:id="@+id/adventure_button"
         android:src="@drawable/adventure_arrow"
 
         android:layout_width="match_parent"
@@ -16,6 +17,7 @@
         />
 
     <ImageView
+        android:id="@+id/shop_button"
         android:src="@drawable/shop_arrow"
 
         android:layout_width="match_parent"

@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".VillageMenu" />
         <activity android:name=".NewGame" />
+        <activity android:name=".Adventure" />
+        <activity android:name=".ShopMenu"></activity>
     </application>
 
 </manifest>
