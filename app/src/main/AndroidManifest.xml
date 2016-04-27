@@ -8,17 +8,22 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/HiddenTitleTheme">
-        <activity android:name=".MainMenu">
+        <activity android:name=".MainMenu"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VillageMenu" />
-        <activity android:name=".NewGame" />
-        <activity android:name=".Adventure" />
-        <activity android:name=".ShopMenu"></activity>
+        <activity android:name=".VillageMenu"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewGame"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Adventure"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ShopMenu"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

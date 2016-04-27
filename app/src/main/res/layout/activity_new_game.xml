@@ -49,7 +49,7 @@
         android:gravity="center"
         />
 
-    <ImageView
+    <Button
         android:id="@+id/btn_4"
 
         android:layout_width="match_parent"
