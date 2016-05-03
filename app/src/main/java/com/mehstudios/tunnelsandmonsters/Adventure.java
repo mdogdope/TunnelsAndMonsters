@@ -25,6 +25,7 @@ public class Adventure extends AppCompatActivity {
         findViewById(R.id.air_list_item_adv).setOnLongClickListener(longClickListener);
 
         findViewById(R.id.drop_target).setOnDragListener(dragListener);
+        findViewById(R.id.drop_target_2).setOnDragListener(dragListener2);
         //=========================================
     }
 
@@ -62,6 +63,35 @@ public class Adventure extends AppCompatActivity {
 
                 case DragEvent.ACTION_DROP:
                     TextView target = (TextView)findViewById(R.id.drop_target);
+                    target.setText("Dropped");
+                    break;
+            }
+
+            return true;
+        }
+
+    };
+
+    View.OnDragListener dragListener2 = new View.OnDragListener()
+    {
+        @Override
+        public boolean onDrag(View v, DragEvent event)
+        {
+            int dragEvent = event.getAction();
+            TextView dropText = (TextView) v;
+
+            switch(dragEvent)
+            {
+                case DragEvent.ACTION_DRAG_ENTERED:
+                    //dropText.setTextColor(Color.GREEN);
+                    break;
+
+                case DragEvent.ACTION_DRAG_EXITED:
+                    //dropText.setTextColor(Color.RED);
+                    break;
+
+                case DragEvent.ACTION_DROP:
+                    TextView target = (TextView)findViewById(R.id.drop_target_2);
                     target.setText("Dropped");
                     break;
             }

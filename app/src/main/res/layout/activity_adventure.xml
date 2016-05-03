@@ -13,7 +13,8 @@
         android:layout_margin="8dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/drop_target"
@@ -21,7 +22,18 @@
             android:textColor="@color/black"
 
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/drop_target_2"
+            android:text="Drop Here 2"
+            android:textColor="@color/black"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             />
 
     </LinearLayout>
